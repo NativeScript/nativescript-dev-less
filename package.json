@@ -1,0 +1,36 @@
+{
+  "name": "nativescript-dev-less",
+  "version": "0.0.1",
+  "description": "LESS CSS pre-processor for NativeScript projects.",
+  "scripts": {
+    "test": "exit 0",
+    "postinstall": "node postinstall.js",
+    "preuninstall": "node preuninstall.js"
+  },
+  "nativescript": {
+    "hooks": [
+      {
+        "type": "before-prepare",
+        "script": "lib/before-prepare.js",
+        "inject": true
+      },
+      {
+        "type": "before-watch",
+        "script": "lib/watch.js",
+        "inject": true
+      }
+    ]
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NativeScript/nativescript-dev-less.git"
+  },
+  "dependencies": {
+    "less": "*",
+    "gaze": "^0.5.2",
+    "glob": "*",
+    "lodash": "^3.10.1",
+    "nativescript-hook": "^0.2.0"
+  }
+}
