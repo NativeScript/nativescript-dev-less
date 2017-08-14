@@ -1,6 +1,6 @@
 {
   "name": "nativescript-dev-less",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "LESS CSS pre-processor for NativeScript projects.",
   "scripts": {
     "test": "exit 0",
